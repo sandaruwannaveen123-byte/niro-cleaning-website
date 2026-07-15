@@ -1,0 +1,77 @@
+/* Global Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  width:100%;
+
+  min-height:100vh;
+
+  font-family:
+  "Segoe UI",
+  Arial,
+  sans-serif;
+
+  overflow-x:hidden;
+
+  background:white;
+
+}
+
+
+/* React Root */
+
+#root{
+
+  width:100%;
+
+  min-height:100vh;
+
+}
+
+
+/* Remove default styles */
+
+button{
+
+  font-family:inherit;
+
+}
+
+
+a{
+
+  text-decoration:none;
+
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3{
+
+  margin:0;
+
+}
+
+
+/* Paragraph */
+
+p{
+
+  margin:0;
+
+}

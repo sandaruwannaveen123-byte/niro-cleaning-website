@@ -1,0 +1,225 @@
+.services{
+
+  padding:100px 8%;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  ),
+  url("/service-bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+}
+
+
+/* Title */
+
+.services-title{
+
+  text-align:center;
+
+}
+
+
+.services-title span{
+
+  display:inline-block;
+
+  background:#d4af37;
+
+  color:#000;
+
+  padding:10px 22px;
+
+  border-radius:30px;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+  margin-bottom:15px;
+
+}
+
+
+.services-title h2{
+
+  font-size:50px;
+
+  margin:15px 0;
+
+  color:#fff;
+
+}
+
+
+.services-title p{
+
+  color:#a5a3a3;
+
+  font-size:22px;
+
+}
+
+
+/* Cards */
+
+.service-container{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:25px;
+
+  margin-top:50px;
+
+}
+
+
+/* Card */
+
+.service-card{
+
+  background:#292929;
+
+  border-radius:20px;
+
+  padding:35px 25px;
+
+  text-align:center;
+
+  border:2px solid #111;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+  transition:.3s;
+
+  cursor:pointer;
+
+}
+
+
+.service-card:hover{
+
+  transform:translateY(-10px);
+
+  border-color:#d4af37;
+
+  box-shadow:0 15px 35px rgba(212,175,55,.25);
+
+}
+
+
+/* Icon */
+
+.service-icon{
+
+  font-size:45px;
+
+  color:#d4af37;
+
+  margin-bottom:20px;
+
+}
+
+
+/* Text */
+
+.service-card h3{
+
+  color:#fff;
+
+  font-size:22px;
+
+  margin-bottom:15px;
+
+}
+
+
+.service-card p{
+
+  color:#ccc;
+
+  line-height:1.7;
+
+  font-size:15px;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.services{
+
+  padding:70px 20px;
+
+}
+
+
+.services-title h2{
+
+  font-size:32px;
+
+}
+
+
+.services-title p{
+
+  font-size:16px;
+
+}
+
+
+.service-container{
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:12px;
+
+}
+
+
+.service-card{
+
+  padding:20px 10px;
+
+  border-radius:15px;
+
+}
+
+
+.service-icon{
+
+  font-size:30px;
+
+  margin-bottom:12px;
+
+}
+
+
+.service-card h3{
+
+  font-size:16px;
+
+}
+
+
+.service-card p{
+
+  font-size:11px;
+
+  line-height:1.5;
+
+}
+
+}
