@@ -537,152 +537,105 @@
 
 
 /* Mobile */
-
 @media(max-width:768px){
 
   .popup-overlay{
-    padding:12px;
+    padding:8px;
   }
-
 
   .popup{
-    max-width:100%;
-    max-height:92vh;
-
-    padding:24px 16px 18px;
-
-    border-radius:18px;
+    width:100%;
+    max-height:96vh;
+    padding:18px 12px 14px;
+    border-radius:16px;
+    overflow-y:auto;
   }
-
 
   .popup h2{
-    font-size:26px;
-
-    margin-bottom:18px;
+    font-size:23px;
+    margin-bottom:12px;
   }
-
 
   .popup form{
-    gap:10px;
+    gap:7px;
   }
-
 
   .popup input,
   .popup select,
   .popup textarea{
-    padding:11px 12px;
-
-    font-size:13px;
+    padding:9px 10px;
+    font-size:12px;
+    border-radius:9px;
   }
-
-
-  .popup select{
-    padding-right:36px;
-  }
-
 
   .popup textarea{
-    min-height:75px;
-    max-height:100px;
+    min-height:55px;
+    max-height:70px;
   }
-
-
-  .close-btn{
-    top:10px;
-    right:10px;
-
-    width:33px;
-    height:33px;
-
-    font-size:22px;
-  }
-
-
-  .book-btn{
-    padding:12px 24px;
-
-    font-size:14px;
-  }
-
 
   .counter-grid{
-    gap:8px;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:7px;
   }
-
 
   .counter-card{
-    padding:11px 6px;
+    display:block;
+    min-width:0;
+    padding:9px 4px;
   }
-
 
   .counter-label{
-    font-size:10px;
-
-    margin-bottom:9px;
+    display:block;
+    font-size:9px;
+    margin-bottom:6px;
   }
-
 
   .counter-controls{
-    gap:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
   }
-
 
   .counter-controls strong{
-    min-width:24px;
-
-    font-size:20px;
+    color:#fff;
+    min-width:20px;
+    font-size:17px;
   }
-
 
   .counter-btn{
-    width:30px;
-    height:30px;
-
-    font-size:19px;
+    display:flex;
+    width:27px;
+    height:27px;
+    padding:0;
+    font-size:16px;
   }
-
 
   .counter-card small{
-    font-size:9px;
-
-    margin-top:7px;
+    display:block;
+    font-size:8px;
+    margin-top:5px;
   }
-
 
   .price-box{
-    padding:12px;
+    display:block;
+    width:100%;
+    padding:9px;
   }
-
 
   .price-box h3{
-    font-size:23px;
+    font-size:20px;
+    margin:4px 0;
   }
-
 
   .price-box p{
-    font-size:10px;
+    font-size:9px;
   }
 
-
-  .booking-success{
-    min-height:260px;
-  }
-
-
-  .success-icon{
-    width:70px;
-    height:70px;
-
-    font-size:38px;
-  }
-
-
-  .booking-success h3{
-    font-size:22px;
-  }
-
-
-  .booking-success p{
+  .book-btn{
+    padding:10px 20px;
     font-size:13px;
   }
 
