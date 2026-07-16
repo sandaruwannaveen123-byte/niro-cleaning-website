@@ -1,4 +1,4 @@
-import Loader from "./components/Loader";
+import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,28 +10,44 @@ import Map from "./components/Map";
 import Footer from "./components/Footer";
 import WhatsApp from "./components/WhatsApp";
 import BackToTop from "./components/BackToTop";
+import Loader from "./components/Loader";
+import BookingPopup from "./components/BookingPopup";
 
-function App(){
+function App() {
 
-
+  const [popupOpen, setPopupOpen] = useState(false);
 
   return (
     <>
 
-
       <Loader />
 
-      
-      <Navbar />
+      <Navbar
+        openPopup={() => setPopupOpen(true)}
+      />
+
       <Hero />
-     <Services />
+
+      <Services />
+
       <About />
+
       <WhyChoose />
+
       <Contact />
+
       <Map />
+
       <Footer />
+
       <WhatsApp />
+
       <BackToTop />
+
+      <BookingPopup
+        isOpen={popupOpen}
+        onClose={() => setPopupOpen(false)}
+      />
 
     </>
   );
