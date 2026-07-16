@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://niroclean.ae/sitemap.xml
+Sitemap: https://niro-cleaning-website.vercel.app/sitemap.xml
