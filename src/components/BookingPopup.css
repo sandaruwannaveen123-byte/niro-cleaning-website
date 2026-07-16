@@ -37,11 +37,9 @@
     );
 
   border:2px solid #333;
-
   border-radius:24px;
 
-  box-shadow:
-    0 25px 70px rgba(0,0,0,.55);
+  box-shadow:0 25px 70px rgba(0,0,0,.55);
 
   animation:popupOpen .45s ease;
 
@@ -69,18 +67,14 @@
 .popup:hover{
   border-color:#d4af37;
 
-  box-shadow:
-    0 25px 70px rgba(212,175,55,.18);
+  box-shadow:0 25px 70px rgba(212,175,55,.18);
 }
 
 
 .popup h2{
   color:white;
-
   text-align:center;
-
   font-size:32px;
-
   margin:0 0 22px;
 }
 
@@ -117,20 +111,53 @@
   padding:12px 14px;
 
   background:#1b1b1b;
-
   color:white;
 
   border:1px solid #555;
-
   border-radius:12px;
 
   outline:none;
 
   font-family:inherit;
-
   font-size:14px;
 
   transition:.3s ease;
+}
+
+
+.popup select{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+
+  cursor:pointer;
+
+  background:
+    linear-gradient(
+      45deg,
+      transparent 50%,
+      #d4af37 50%
+    )
+    calc(100% - 18px)
+    calc(50% - 3px) / 6px 6px no-repeat,
+
+    linear-gradient(
+      135deg,
+      #d4af37 50%,
+      transparent 50%
+    )
+    calc(100% - 12px)
+    calc(50% - 3px) / 6px 6px no-repeat,
+
+    #1b1b1b;
+
+  padding-right:40px;
+}
+
+
+.popup select option{
+  background:#1b1b1b;
+  color:white;
 }
 
 
@@ -153,19 +180,13 @@
 .popup textarea:focus{
   border-color:#d4af37;
 
-  box-shadow:
-    0 0 0 3px rgba(212,175,55,.15);
+  box-shadow:0 0 0 3px rgba(212,175,55,.15);
 
   transform:translateY(-2px);
 }
 
 
-.popup select option{
-  background:#1b1b1b;
-
-  color:white;
-}
-
+/* Close button */
 
 .close-btn{
   position:absolute;
@@ -183,11 +204,9 @@
   padding:0;
 
   border:none;
-
   border-radius:50%;
 
   background:#292929;
-
   color:#d4af37;
 
   font-size:25px;
@@ -200,12 +219,13 @@
 
 .close-btn:hover{
   background:#d4af37;
-
   color:#111;
 
   transform:rotate(90deg) scale(1.08);
 }
 
+
+/* Booking button */
 
 .book-btn{
   margin-top:6px;
@@ -213,15 +233,12 @@
   padding:13px 28px;
 
   border:none;
-
   border-radius:30px;
 
   background:#d4af37;
-
   color:#111;
 
   font-size:15px;
-
   font-weight:700;
 
   cursor:pointer;
@@ -232,15 +249,243 @@
 
 .book-btn:hover{
   background:#00c853;
-
   color:white;
 
   transform:translateY(-4px);
 
-  box-shadow:
-    0 12px 25px rgba(0,200,83,.3);
+  box-shadow:0 12px 25px rgba(0,200,83,.3);
 }
 
+
+/* Hours and cleaners */
+
+.counter-grid{
+  display:grid;
+
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+
+  gap:12px;
+}
+
+
+.counter-card{
+  padding:14px;
+
+  text-align:center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #292929,
+      #1b1b1b
+    );
+
+  border:1px solid #555;
+  border-radius:15px;
+
+  transition:.3s ease;
+}
+
+
+.counter-card:hover{
+  border-color:#d4af37;
+
+  box-shadow:0 10px 25px rgba(212,175,55,.15);
+
+  transform:translateY(-3px);
+}
+
+
+.counter-label{
+  display:block;
+
+  color:#d4af37;
+
+  font-size:12px;
+  font-weight:700;
+
+  letter-spacing:1px;
+  text-transform:uppercase;
+
+  margin-bottom:10px;
+}
+
+
+.counter-controls{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:18px;
+}
+
+
+.counter-controls strong{
+  min-width:28px;
+
+  color:white;
+
+  font-size:24px;
+}
+
+
+.counter-btn{
+  width:34px;
+  height:34px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0;
+
+  border:1px solid #d4af37;
+  border-radius:50%;
+
+  background:transparent;
+  color:#d4af37;
+
+  font-size:22px;
+  font-weight:700;
+  line-height:1;
+
+  cursor:pointer;
+
+  transition:.3s ease;
+}
+
+
+.counter-btn:hover{
+  background:#d4af37;
+  color:#111;
+
+  transform:scale(1.1);
+}
+
+
+.counter-btn:active{
+  transform:scale(.95);
+}
+
+
+.counter-card small{
+  display:block;
+
+  color:#999;
+
+  font-size:11px;
+
+  margin-top:8px;
+}
+
+
+/* Price box */
+
+.price-box{
+  padding:16px;
+
+  text-align:center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2a2a2a,
+      #1b1b1b
+    );
+
+  border:2px solid #d4af37;
+  border-radius:16px;
+
+  box-shadow:0 10px 25px rgba(212,175,55,.15);
+}
+
+
+.price-box span{
+  color:#ddd;
+
+  font-size:12px;
+  font-weight:600;
+
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+
+.price-box h3{
+  color:#d4af37;
+
+  font-size:30px;
+  font-weight:700;
+
+  margin:7px 0;
+}
+
+
+.price-box p{
+  color:#aaa;
+
+  font-size:12px;
+  line-height:1.4;
+
+  margin:0;
+}
+
+
+/* Success message */
+
+.booking-success{
+  min-height:320px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  animation:successOpen .4s ease;
+}
+
+
+.success-icon{
+  width:85px;
+  height:85px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:#00c853;
+  color:white;
+
+  font-size:48px;
+  font-weight:700;
+
+  box-shadow:0 15px 35px rgba(0,200,83,.3);
+
+  animation:successPulse 1s infinite;
+}
+
+
+.booking-success h3{
+  color:white;
+
+  font-size:28px;
+
+  margin:25px 0 10px;
+}
+
+
+.booking-success p{
+  color:#bbb;
+
+  font-size:15px;
+}
+
+
+/* Animations */
 
 @keyframes overlayFade{
   from{
@@ -256,18 +501,37 @@
 @keyframes popupOpen{
   from{
     opacity:0;
-
-    transform:
-      translateY(35px)
-      scale(.92);
+    transform:translateY(35px) scale(.92);
   }
 
   to{
     opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
 
-    transform:
-      translateY(0)
-      scale(1);
+
+@keyframes successOpen{
+  from{
+    opacity:0;
+    transform:scale(.85);
+  }
+
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+
+@keyframes successPulse{
+  0%,
+  100%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
   }
 }
 
@@ -283,7 +547,6 @@
 
   .popup{
     max-width:100%;
-
     max-height:92vh;
 
     padding:24px 16px 18px;
@@ -313,6 +576,11 @@
   }
 
 
+  .popup select{
+    padding-right:36px;
+  }
+
+
   .popup textarea{
     min-height:75px;
     max-height:100px;
@@ -334,6 +602,88 @@
     padding:12px 24px;
 
     font-size:14px;
+  }
+
+
+  .counter-grid{
+    gap:8px;
+  }
+
+
+  .counter-card{
+    padding:11px 6px;
+  }
+
+
+  .counter-label{
+    font-size:10px;
+
+    margin-bottom:9px;
+  }
+
+
+  .counter-controls{
+    gap:10px;
+  }
+
+
+  .counter-controls strong{
+    min-width:24px;
+
+    font-size:20px;
+  }
+
+
+  .counter-btn{
+    width:30px;
+    height:30px;
+
+    font-size:19px;
+  }
+
+
+  .counter-card small{
+    font-size:9px;
+
+    margin-top:7px;
+  }
+
+
+  .price-box{
+    padding:12px;
+  }
+
+
+  .price-box h3{
+    font-size:23px;
+  }
+
+
+  .price-box p{
+    font-size:10px;
+  }
+
+
+  .booking-success{
+    min-height:260px;
+  }
+
+
+  .success-icon{
+    width:70px;
+    height:70px;
+
+    font-size:38px;
+  }
+
+
+  .booking-success h3{
+    font-size:22px;
+  }
+
+
+  .booking-success p{
+    font-size:13px;
   }
 
 }

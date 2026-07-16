@@ -5,7 +5,9 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import About from "./components/About";
 import WhyChoose from "./components/WhyChoose";
+import Process from "./components/Process";
 import Contact from "./components/Contact";
+import FAQ from "./components/FAQ";
 import Map from "./components/Map";
 import Footer from "./components/Footer";
 import WhatsApp from "./components/WhatsApp";
@@ -34,7 +36,11 @@ function App() {
 
       <WhyChoose />
 
+      <Process />
+
       <Contact />
+
+      <FAQ />
 
       <Map />
 
