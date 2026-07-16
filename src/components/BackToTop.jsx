@@ -15,7 +15,7 @@ function BackToTop() {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
 
-      setShow(scrollTop > 150);
+      setShow(scrollTop > 100);
 
     };
 

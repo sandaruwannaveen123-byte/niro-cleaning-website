@@ -50,17 +50,27 @@
 @media (max-width:768px){
 
   .back-top{
+    position:fixed !important;
 
-    right:18px;
-    bottom:90px;
+    right:18px !important;
+    bottom:95px !important;
 
-    width:48px;
-    height:48px;
+    width:48px !important;
+    height:48px !important;
+
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
 
     font-size:18px;
 
-    z-index:999999;
+    z-index:9999999 !important;
+  }
 
+  .back-top.show{
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:translateY(0) !important;
   }
 
 }
